@@ -7,8 +7,15 @@ body{
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Убедитесь, что панель находится выше других элементов */
+  background-color: #FFFFFF; /* Поддерживает ваш текущий цвет фона */
   border-bottom: #000000 solid 1px;
 }
+
 
 .header-logo {
   font-family: "Ubuntu", sans-serif;

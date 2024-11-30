@@ -143,8 +143,12 @@
 }
 
 
+.top-part-grid {
+  margin: 35px 240px;
+}
+/*
 .store {
-  height: 480px;
+  height: 1000px;
   width: 100%;
   border-width: 0;
 }
@@ -160,4 +164,108 @@
 
 .search-and-sort {
   display: table-cell;
+  text-align: right;
+}
+
+*/
+
+/* Общие стили для каталога */
+.store {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  color: #000;
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Стили верхней части */
+.top-part-grid {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.filter-controls {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Фильтры слева */
+.filter-options {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  font-size: large;
+}
+
+.filter {
+  position: relative;
+}
+
+.filter-label {
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  color: #000;
+}
+
+.filter-options-list {
+  margin-top: 5px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: none;
+  position: absolute;
+  z-index: 100;
+}
+
+.filter-options-list.hidden {
+  display: none;
+}
+.filter-options-list {
+  display: block;
+}
+
+/* Поиск и сортировка справа */
+.search-and-sort {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+
+#search-box {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 200px;
+}
+
+#sort-options {
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 5px 15px;
+  background-color: #F9C800;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #000;
+}
+
+button:hover {
+  background-color: #e0b700;
+}
+
+/* Стили для нижней части каталога */
+#catalog-results {
+  border-top: 2px solid #ccc;
+  padding-top: 20px;
+  font-size: 16px;
 }
