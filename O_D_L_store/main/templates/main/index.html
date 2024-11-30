@@ -1,0 +1,106 @@
+{% extends 'main/layout.html' %}
+{% load static %}
+
+{% block title_content %}
+Главная страница
+{% endblock %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'main/css/index.css' %}">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script src="{% static 'main/js/index.js' %}"></script>
+{% endblock %}
+
+{% block body_content %}
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <!-- Шаблон картинки для слайда -->
+
+        <!-- 
+
+        <div class="swiper-slide">
+            <img src="{% static 'main/img/<имя_файла>' %}" alt="Slide <номер_слайда>">
+        </div>
+        
+        -->
+
+
+        <div class="swiper-slide">
+            <div class="gradient-overlay slide-overlay"></div>
+            <img src="{% static 'main/img/index/slides/image1.png' %}" alt="Slide 1">
+        </div>
+        <div class="swiper-slide">
+            <div class="gradient-overlay slide-overlay"></div>
+            <img src="{% static 'main/img/index/slides/image2.png' %}" alt="Slide 2">
+        </div>
+        <div class="swiper-slide">
+            <div class="gradient-overlay slide-overlay"></div>
+            <img src="{% static 'main/img/index/slides/image3.png' %}" alt="Slide 3">
+        </div>
+        <div class="swiper-slide">
+            <div class="gradient-overlay slide-overlay"></div>
+            <img src="{% static 'main/img/index/slides/image4.png' %}" alt="Slide 3">
+        </div>
+        <div class="swiper-slide">
+            <div class="gradient-overlay slide-overlay"></div>
+            <img src="{% static 'main/img/index/slides/image5.png' %}" alt="Slide 3">
+        </div>
+        <div class="swiper-slide">
+            <div class="gradient-overlay slide-overlay"></div>
+            <img src="{% static 'main/img/index/slides/image6.png' %}" alt="Slide 3">
+        </div>
+    </div>
+    <div class="swiper-button-next" style="color: #F9C800;"></div>
+    <div class="swiper-button-prev" style="color: #F9C800;"></div>
+    <div class="swiper-pagination" style="color: #F9C800;"></div>
+</div>
+
+<div class="text-divider">
+    <span>Выберите свою идеальную оправу</span>
+</div>
+
+<div class="card-container">
+    <a href="#" class="card">
+        <div class="card" style='background-image: url("{% static "main/img/index/cards/card_1.png" %}");'>
+            <div class="gradient-overlay"></div>
+            <span class="card-link">Оправы для солнцезащитных очков</span>
+        </div>
+    </a>
+    <a href="#" class="card">
+        <div class="card" style='background-image: url("{% static "main/img/index/cards/card_2.png" %}");'>
+            <div class="gradient-overlay"></div>
+            <span class="card-link">Мужские оправы</span>
+        </div>
+    </a>
+    <a href="#" class="card">
+        <div class="card" style='background-image: url("{% static "main/img/index/cards/card_3.png" %}");'>
+            <div class="gradient-overlay"></div>
+            <span class="card-link">Женские оправы</span>
+        </div>
+    </a>
+</div>
+
+<div class="store">
+    <div class="top-part-grid">
+        <div class="filter-controls">
+            <div class="filter-options">
+                123
+            </div>
+            
+            <div class="search-and-sort">
+                321
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-part-grid">
+
+    </div>
+</div>
+
+
+{% endblock %}
